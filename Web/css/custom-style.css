@@ -1,0 +1,121 @@
+/* CSS Document */
+
+/* Nav bar */
+
+img.logo {
+    content:url("../img/fnlg/fnlg_logo.png");
+}
+
+
+.navbar-fixed-top {
+  border: 0;
+  background-color: #234175;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #9d9d9d;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+}
+
+#navMyAccountDropdown {
+	visibility: hidden;
+	display:none;
+}
+
+#navSignOut {
+	visibility: hidden;
+	display:none;
+}
+
+/* End Nav bar /*
+
+/* Dashboard */
+
+.dashboardHeader {
+    letter-spacing: 1px;
+    padding: 5px 20px;
+    color: #fff;
+    background-color: #428bca;
+}
+
+.dashboardHeader .badge {
+    background-color: #234175;
+}
+
+.availabilityDashboard .resourceName {
+    text-overflow: ellipsis;
+    color: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    padding: 1px;
+    display: inline-block;
+    margin-right: 2px;
+    background-color: #234175;
+}
+
+
+.availabilityDashboard .resourceName a {
+    color: #fff;
+}
+
+.dashboard {
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    background-color: #fcfcfc;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; 
+}
+
+/* End Dashboard */
+
+/* Misc UI */
+
+body {
+		background-color: #fff;
+}
+	
+a, a:visited {
+    color: #428bca;
+}
+
+a.remove {
+    color: #AA3939;
+}
+
+#reservation-box .resourceName {
+    color: #fff;
+	background-color: #234175;
+}
+
+.btn-primary {
+    background-color: #428bca;
+    border-color: #234175;
+}
+
+.btn-success.active, .btn-success.focus, .btn-success:active, .btn-success:focus, .btn-success:hover, .open>.dropdown-toggle.btn-success, .btn, .btn-success {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #234175;
+}
+
+
+.default-box h1 {
+	
+	padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+	font-family: inherit;
+	  font-weight: 500;
+	  line-height: 1.1;
+	  color: inherit;
+}
+
+/* End Misc UI */
