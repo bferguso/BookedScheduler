@@ -34,46 +34,6 @@ $conf['settings']['home.url'] = ''; 	      					// the url to open when the logo
 $conf['settings']['logout.url'] = ''; 	      					// the url to be directed to after logging out
 $conf['settings']['default.homepage'] = '1'; 	      			// the default homepage to use when new users register (1 = Dashboard, 2 = Schedule, 3 = My Calendar, 4 = Resource Calendar)
 
-$conf['settings']['app.title'] = '<fnlg_app_name>';
-$conf['settings']['default.timezone'] = 'America/Vancouver';
-$conf['settings']['allow.self.registration'] = 'false';
-$conf['settings']['admin.email'] = '<booked_admin_email>';
-$conf['settings']['admin.email.name'] = '<booked_admin_email_name>';
-$conf['settings']['default.page.size'] = '50';
-$conf['settings']['enable.email'] = 'false';
-$conf['settings']['default.language'] = 'en_us';
-$conf['settings']['script.url'] = '<base_context_url>/booked/Web';
-$conf['settings']['image.upload.directory'] = 'Web/uploads/images';
-$conf['settings']['image.upload.url'] = 'uploads/images';
-$conf['settings']['cache.templates'] = 'false';
-$conf['settings']['use.local.jquery'] = 'false';
-$conf['settings']['registration.captcha.enabled'] = 'false';
-$conf['settings']['registration.require.email.activation'] = 'false';
-$conf['settings']['registration.auto.subscribe.email'] = 'false';
-$conf['settings']['registration.notify.admin'] = 'false';
-$conf['settings']['inactivity.timeout'] = '30';
-$conf['settings']['name.format'] = '{first} {last}';
-$conf['settings']['css.extension.file'] = '';
-$conf['settings']['disable.password.reset'] = 'true';
-$conf['settings']['home.url'] = '';
-$conf['settings']['logout.url'] = '';
-$conf['settings']['default.homepage'] = '1';
-$conf['settings']['schedule']['use.per.user.colors'] = 'false';
-$conf['settings']['schedule']['show.inaccessible.resources'] = 'true';
-$conf['settings']['schedule']['reservation.label'] = '{title}';
-$conf['settings']['schedule']['hide.blocked.periods'] = 'false';
-$conf['settings']['ics']['require.login'] = 'true';
-$conf['settings']['ics']['subscription.key'] = '';
-$conf['settings']['privacy']['view.schedules'] = 'true';
-$conf['settings']['privacy']['view.reservations'] = 'false';
-$conf['settings']['privacy']['hide.user.details'] = 'false';
-$conf['settings']['privacy']['hide.reservation.details'] = 'false';
-$conf['settings']['privacy']['allow.guest.reservations'] = 'false';
-$conf['settings']['reservation']['start.time.constraint'] = 'future';
-$conf['settings']['reservation']['updates.require.approval'] = 'false';
-$conf['settings']['reservation']['prevent.participation'] = 'false';
-$conf['settings']['reservation']['prevent.recurrence'] = 'true';
-$conf['settings']['reservation']['enable.reminders'] = 'false';
 $conf['settings']['schedule']['use.per.user.colors'] = 'false'; 		// color reservations by user
 $conf['settings']['schedule']['show.inaccessible.resources'] = 'true';  // whether or not resources that are inaccessible to the user are visible
 $conf['settings']['schedule']['reservation.label'] = '{title}';    		// format for what to display on the reservation slot label.  Available properties are: {name}, {title}, {description}, {email}, {phone}, {organization}, {position}, {startdate}, {enddate} {resourcename} {participants} {invitees} {reservationAttributes}. Custom attributes can be added using att with the attribute id. For example {att1}
@@ -281,6 +241,3 @@ $conf['settings']['fnlg.custom.first_nation.id.label'] = 'fnlgFirstNationId';
 
 $conf['settings']['fnlg.api.username'] = 'fnlguser';
 $conf['settings']['fnlg.api.local.ip.addresses'] = '<fnlg_api_ip_whitelist>';
-?>
-
-
