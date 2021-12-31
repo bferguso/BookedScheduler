@@ -109,6 +109,51 @@
                             </button>
                         </div>
                     </div>
+{* This section was in 2.7.6 - Needs to be removed?
+                    <div class="col-xs-12" id="reservation-resources">
+                        <div class="form-group">
+                            <div class="pull-left">
+                                <div>
+                                    <label>{translate key="Resources"}</label>
+                                    {if $ShowAdditionalResources}
+                                        <a id="btnAddResources" href="#"
+                                           class="small-action" data-toggle="modal"
+                                           data-target="#dialogResourceGroups">{translate key=Change} <span
+                                                class="fa fa-plus-square"></span></a>
+                                    {/if}
+                                </div>
+
+                                <div id="primaryResourceContainer" class="inline">
+                                    <input type="hidden" id="scheduleId" {formname key=SCHEDULE_ID}
+                                           value="{$ScheduleId}"/>
+                                    <input class="resourceId" type="hidden"
+                                           id="primaryResourceId" {formname key=RESOURCE_ID} value="{$ResourceId}"/>
+                                    {displayResource resource=$Resource}
+                                </div>
+
+                                <div id="additionalResources">
+                                    {foreach from=$AvailableResources item=resource}
+                                        {if is_array($AdditionalResourceIds) && in_array($resource->Id, $AdditionalResourceIds)}
+                                            <input class="resourceId" type="hidden"
+                                                   name="{FormKeys::ADDITIONAL_RESOURCES}[]" value="{$resource->Id}"/>
+                                            {displayResource resource=$resource}
+                                        {/if}
+                                    {/foreach}
+                                </div>
+                            </div>
+                            <div class="accessoriesDiv">
+                                {if $ShowReservationDetails && $AvailableAccessories|count > 0}
+                                    <label>{translate key="Accessories"}</label>
+                                    <a href="#" id="addAccessoriesPrompt"
+                                       class="small-action" data-toggle="modal"
+                                       data-target="#dialogAddAccessories">{translate key='Add'} <span
+                                            class="fa fa-plus-square"></span></a>
+                                    <div id="accessories"></div>
+                                {/if}
+                            </div>
+                        </div>
+                    </div>
+*}
 
                     <div class="col-xs-12 reservationDates">
                         <div class="col-md-6 no-padding-left">
@@ -249,6 +294,21 @@
 
                         </div>
                     </div>
+
+                    {if (strpos($Resource->Name,"Virtual") === false)}
+                        <div class="col-xs-12 reservationDescription">
+                            {include file="Reservation/fnlgUnscheduledRequests.tpl"}
+                        </div>
+                    {else}
+                        <script type="application/javascript">
+                            $(function () {
+                                $("label[for=inviteeAutocomplete]").closest("div.row").hide();
+                                $("#custom-attributes-placeholder").hide();
+                                $("#promptForGroupParticipants").hide();
+                            });
+                        </script>
+                    {/if}
+
 
                     {if !empty($ReferenceNumber)}
                         <div class="col-xs-12">

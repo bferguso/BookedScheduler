@@ -1,7 +1,8 @@
 	</div><!-- close main-->
 
 	<footer class="footer navbar">
-		<a href="{$CompanyUrl}">{$CompanyName}</a> <br/><a href="https://github.com/effgarces/BookedScheduler">{$AppTitle} GPLv3 v{$Version}</a>
+		{* <a href="{$CompanyUrl}">{$CompanyName}</a> <br/><a href="https://github.com/effgarces/BookedScheduler">{$AppTitle} GPLv3 v{$Version}</a> *}
+        {include file="Fnlg/fnlgfooter.tpl"}
 
 	</footer>
 

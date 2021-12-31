@@ -130,6 +130,7 @@
             <div class="collapse navbar-collapse" id="booked-navigation">
                 <ul class="nav navbar-nav">
                     {if $LoggedIn}
+                        {include file="Fnlg/fnlgheader.tpl"}
                         <li id="navDashboard"><a href="{$Path}{Pages::DASHBOARD}">{translate key="Dashboard"}</a></li>
                         <li class="dropdown" id="navMyAccountDropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">{translate key="MyAccount"} <b
